@@ -33,42 +33,42 @@ const Component9_1 = () => {
               </Text>
             </div>
 
-            <div className="bg-white-A700 border border-gray-600 border-solid flex flex-1 flex-col  justify-center sm:px-5 text-base text-center px-6 py-[7px] rounded-[10px] w-full">
-              <Button className="bg-white-A700 bottom-[0] cursor-pointer flex items-center justify-center min-w-[122px] px-4 py-[9px] right-[0] rounded-[10px]">
-                <Link to="/about">
-                  <Text
-                    className="text-xl md:text-[22px] text-center text-gray-900 sm:text-xl tracking-[-0.48px] w-full"
-                    size="txtManropeBold24Gray900"
-                  >
-                    More about me
-                  </Text>
-                </Link>
-              </Button>
-            </div>
+            <Button className="bg-white-A700 border border-gray-600 border-solid text-xl cursor-pointer font-semibold py-[17px] rounded-[10px]  text-gray-900 w-full hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300">
+              <Link to="/about">
+                <Text
+                  className="text-xl md:text-[22px] text-center sm:text-xl tracking-[-0.48px] w-full"
+                  size="txtManropeBold24Gray900"
+                >
+                  More about me
+                </Text>
+              </Link>
+            </Button>
 
-            <div className="flex flex-row gap-4 items-start justify-start w-full">
-              <a target="_blank" href={general.facebook}>
-                <Img
-                  className="h-[60px] w-[60px]"
-                  src="images/img_clock_gray_600.svg"
-                  alt="clock"
-                />
-              </a>
-              <a target="_blank" href={general.linkedin}>
-                <Img
-                  className="h-[60px] w-[60px]"
-                  src="images/img_linkedin_gray_600.svg"
-                  alt="linkedin"
-                />
-              </a>
-              <a target="_blank" href={general.youtube}>
-                <Img
-                  className="h-[60px] w-[60px]"
-                  src="images/img_play.svg"
-                  alt="play"
-                />
-              </a>
-              <Button className="bg-gray-900 cursor-pointer font-semibold ml-4 py-[17px] rounded-[10px] text-base text-center text-white-A700 w-full">
+            <div className="flex md:flex-row sm:flex-col gap-4 items-start justify-start w-full">
+              <div className="flex flex-row gap-4 items-start justify-between w-full" >
+                <a target="_blank" href={general.facebook}>
+                  <Img
+                    className="h-[60px] min-w-[60px] rounded-[20px] hover:bg-white-A700 "
+                    src="images/img_clock_gray_600.svg"
+                    alt="clock"
+                  />
+                </a>
+                <a target="_blank" href={general.linkedin}>
+                  <Img
+                    className="h-[60px] min-w-[60px] rounded-[10px] hover:bg-white-A700"
+                    src="images/img_linkedin_gray_600.svg"
+                    alt="linkedin"
+                  />
+                </a>
+                <a target="_blank" href={general.youtube}>
+                  <Img
+                    className="h-[60px] min-w-[60px] rounded-[20px] hover:bg-white-A700"
+                    src="images/img_play.svg"
+                    alt="play"
+                  />
+                </a>
+              </div>
+              <Button className="bg-gray-900 cursor-pointer min-w-[80px] font-semibold py-[17px] rounded-[10px] text-base text-center text-white-A700 w-full hover:bg-gray-700 transition-colors duration-300">
                 <Link to="/contactpage">Contact</Link>
               </Button>
             </div>

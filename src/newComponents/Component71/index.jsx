@@ -21,7 +21,7 @@ const Component71 = ({ article }) => {
             {article.name}
           </Text>
           <a
-            className="flex flex-row gap-2 items-center justify-start w-full sm:w-full"
+            className="flex flex-row gap-2 items-center justify-start p-2 rounded-lg hover:bg-gray-200 transition-colors duration-300"
             target="_blank"
             href={article.link}
           >

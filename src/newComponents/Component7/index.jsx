@@ -19,7 +19,7 @@ const Component7 = () => {
                 News & Bolg
               </Text>
               <Button
-                className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[124px]"
+                className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[124px] p-2 rounded-lg hover:bg-gray-200 transition-colors duration-300"
                 onClick={() => navigate("/listing")}
                 rightIcon={
                   <Img

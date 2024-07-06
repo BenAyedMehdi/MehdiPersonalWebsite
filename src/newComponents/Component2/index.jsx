@@ -25,7 +25,7 @@ const Component2 = () => {
                   online. Join me and let's make something amazing together!{" "}
                 </Text>
               </div>
-              <Button className="bg-gray-900 cursor-pointer font-semibold ml-4 py-[17px] rounded-[10px] text-base text-center text-white-A700 w-full">
+              <Button className="bg-gray-900 cursor-pointer font-semibold ml-4 py-[17px] rounded-[10px] text-base text-center text-white-A700 w-full hover:bg-gray-700 transition-colors duration-300">
                 <Link to="/contactpage">Contact</Link>
               </Button>
             </div>

@@ -29,7 +29,7 @@ const Component4 = ({projects}) => {
                   Featured Projects
                 </Text>
                 <Button
-                  className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[124px]"
+                  className="common-pointer bg-transparent cursor-pointer flex items-center p-2 rounded-md justify-center min-w-[124px] hover:bg-gray-300 transition-colors duration-300"
                   onClick={() => navigate("/portfolio")}
                   rightIcon={
                     <Img
