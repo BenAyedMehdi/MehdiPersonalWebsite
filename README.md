@@ -1,16 +1,8 @@
-## Projects:
-# [EcoRebuild Demo](https://ecorebuild.netlify.app/)
+
 # [Portfolio Demo](https://mehdibenayed.netlify.app/)
-# [Foosheeka Demo](https://foosheeka.netlify.app/)
-# [Gaza-Palestine Demo](https://gazapalestine.netlify.app/)
 
 ## Ongoing:
--- Feature branch: ecorebuild
--- Feature branch: mehdi-portfolio
+-- Adding more projects
 
-## EcoRebuild v1.0
-- 10/05/2024
-
-## EcoRebuild v1.1
-- 8/06/2024
-
+## v1.0.0
+- 10/07/2024: Released portfolio with 6 projects
