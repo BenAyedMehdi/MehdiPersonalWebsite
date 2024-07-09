@@ -20,11 +20,9 @@ const AboutUsPage = ({ projects }) => {
       <div className="bg-white-A700 flex flex-col font-markoone sm:gap-10 md:gap-10 gap-[100px] items-center justify-start mx-auto w-auto sm:w-full md:w-full">
         <LandingPageHeader className="bg-white-A700 flex gap-2 h-20 md:h-auto items-center justify-between md:px-5 px-[120px] py-[19px] w-full" />
         <Component8 />
-        <Component4 projects={projects} />
         <Component9 />
         <Component10 />
-        <Component7 />
-        <Component21 />
+        <Component4 projects={projects} />
         <LandingPageFooter className="bg-white-A700 flex gap-2 items-center justify-center md:px-5 px-[120px] py-20 w-full" />
       </div>
     </>
