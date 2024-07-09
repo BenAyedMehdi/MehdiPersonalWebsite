@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Button, Img, Input, Line, List, Text } from "components";
 import LandingPageFooter from "components/LandingPageFooter";
@@ -7,6 +7,9 @@ import Component0 from "newComponents/Component0";
 import Component21 from "newComponents/Component21";
 
 const ContactPagePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="bg-gray-51 flex flex-col font-markoone sm:gap-10 md:gap-10 gap-[100px] items-start justify-start mx-auto w-auto sm:w-full md:w-full">

@@ -21,7 +21,9 @@ const Component9_1 = () => {
                 className="leading-[180.00%] max-w-[531px] md:max-w-full text-gray-700 text-lg"
                 size="txtManropeRegular18Gray700"
               >
-                Specialized in <strong>backend </strong>development, wired to
+                Making <strong>websites</strong> is what I love doing! 
+                <br/>
+                I am a <strong>full-stack</strong> developer, specialized in <strong>backend </strong>development, wired to
                 create solutions and implement <strong>creative</strong> ideas,{" "}
                 designed to unlock the potential of a <strong>team</strong> , a
                 company, or a project. With my <strong>technical</strong>{" "}

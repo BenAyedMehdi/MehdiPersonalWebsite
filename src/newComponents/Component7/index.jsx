@@ -35,7 +35,7 @@ const Component7 = () => {
               </Button>
             </div>
             <List
-              className="sm:flex-col flex-row gap-16 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-start w-full"
+              className="sm:flex-col flex-row gap-16 grid sm:grid-cols-1 md:grid-cols-3 grid-cols-3 justify-start w-full"
               orientation="horizontal"
             >
               <Component71

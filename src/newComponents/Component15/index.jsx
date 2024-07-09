@@ -6,7 +6,13 @@ import { useNavigate } from "react-router-dom";
 import { projectsList } from "mock/projects";
 
 const Component15 = ({ project }) => {
-  const projectDetails = project?? projectsList[0];
+  const projectDetails = project ?? projectsList[0];
+  const openRedirectURL1 = () => {
+    window.open(project.url, "_blank"); // replace with your YouTube video URL
+  };
+  const openRedirectURL2 = () => {
+    window.open(project.github, "_blank"); // replace with your YouTube video URL
+  };
 
   return (
     <>
@@ -30,46 +36,32 @@ const Component15 = ({ project }) => {
                       {projectDetails?.punchline}
                     </Text>
                   </div>
-                  <div className="flex sm:flex-col flex-row gap-4 items-start justify-start md:pr-10 sm:pr-5 pr-[180px] w-full">
-                    <div className="bg-white-A700 border border-gray-600 border-solid flex flex-1 flex-col items-center justify-center sm:px-5 px-6 py-[7px] rounded-[10px] w-full">
-                      <div className="flex flex-col gap-1 items-start justify-start w-full">
-                        <Button
-                          className="bg-white-A700 bottom-[0] cursor-pointer flex items-center justify-center min-w-[122px] px-4 py-[9px] right-[0] rounded-[10px]"
-                        >
-                          <div className="font-bold text-gray-900 text-left text-lg">
-                            <a href={projectDetails?.url}>
-                              <Text
-                                className="text-2xl md:text-[22px] text-gray-900 sm:text-xl tracking-[-0.48px] w-full"
-                                size="txtManropeBold24Gray900"
-                              >
-                                PREVIEW
-                              </Text>
-                              <Text
-                                className="text-gray-600 text-xs w-full"
-                                size="txtManropeSemiBold12"
-                              >
-                                click here
-                              </Text>
-                            </a>
-                          </div>
-                        </Button>
-                      </div>
+                  <div className="flex sm:flex-col flex-row gap-4 items-start justify-start md:pr-10 sm:pr-5 pr-[50px] w-full">
+                    <div className="flex flex-col gap-1 items-start justify-start w-full">
+                      <Button
+                        className="common-pointer bg-gray-900 cursor-pointer gap-[10px] flex items-center rounded-[10px] py-[13px] justify-center w-full hover:bg-gray-700 transition-colors duration-300"
+                        onClick={openRedirectURL1}
+                        rightIcon={
+                          <Img src="images/img_play.svg" alt="Video" />
+                        }
+                      >
+                        <div className="font-manrope font-semibold text-lg text-center text-white-A700">
+                          Try Demo
+                        </div>
+                      </Button>
                     </div>
-                    <div className="bg-white-A700 border border-bluegray-100 border-solid flex flex-1 flex-col items-center justify-center sm:px-5 px-6 py-[7px] rounded-[10px] w-full">
-                      <div className="flex flex-col gap-1 items-start justify-start w-full">
-                        <Text
-                          className="text-2xl md:text-[22px] text-gray-900 sm:text-xl tracking-[-0.48px] w-full"
-                          size="txtManropeBold24Gray900"
-                        >
-                          {projectDetails?.type}
-                        </Text>
-                        <Text
-                          className="text-gray-600 text-xs w-full"
-                          size="txtManropeSemiBold12"
-                        >
-                          {projectDetails?.tech}
-                        </Text>
-                      </div>
+                    <div className="flex flex-col gap-1 items-start justify-start w-full">
+                      <Button
+                        className="common-pointer bg-gray-900 cursor-pointer gap-[10px] flex items-center rounded-[10px] py-[13px] justify-center w-full hover:bg-gray-700 transition-colors duration-300"
+                        onClick={openRedirectURL2}
+                        rightIcon={
+                          <Img src="images/img_play.svg" alt="Video" />
+                        }
+                      >
+                        <div className="font-manrope font-semibold text-lg text-center text-white-A700">
+                          View on GitHub
+                        </div>
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -89,7 +81,7 @@ const Component15 = ({ project }) => {
                 </div>
               </div>
             </div>
-            <div className="bg-white-A700 border border-bluegray-100 border-solid flex flex-col items-start justify-start p-10 sm:px-5 rounded-[10px] w-full">
+            {/* <div className="bg-white-A700 border border-bluegray-100 border-solid flex flex-col items-start justify-start p-10 sm:px-5 rounded-[10px] w-full">
               <div className="flex flex-col gap-6 items-start justify-start w-full">
                 <Text
                   className="sm:text-2xl md:text-[26px] text-[28px] text-gray-900 tracking-[-0.56px] w-auto"
@@ -209,7 +201,8 @@ const Component15 = ({ project }) => {
                   </div>
                 </List>
               </div>
-            </div>
+            </div> */}
+{/*             
             <div className="bg-white-A700 border border-bluegray-100 border-solid flex flex-col items-start justify-start p-10 sm:px-5 rounded-[10px] w-full">
               <div className="flex flex-col gap-[26px] items-start justify-start w-full">
                 <Text
@@ -295,9 +288,10 @@ const Component15 = ({ project }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>  */}
+           
           </div>
-          <div className="bg-white-A700 border border-bluegray-100 border-solid flex sm:flex-1 flex-col items-start justify-start p-6 sm:px-5 rounded-[10px] w-auto sm:w-full">
+          {/* <div className="bg-white-A700 border border-bluegray-100 border-solid flex sm:flex-1 flex-col items-start justify-start p-6 sm:px-5 rounded-[10px] w-auto sm:w-full">
             <div className="flex flex-col gap-10 items-start justify-start w-[336px]">
               <div className="flex flex-col gap-6 items-start justify-start w-full">
                 <Text
@@ -376,7 +370,7 @@ const Component15 = ({ project }) => {
                 SEND
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Button,  Img, Input, List, Text } from "components";
 import LandingPageFooter from "components/LandingPageFooter";
@@ -8,6 +8,9 @@ import Component15 from "newComponents/Component15";
 import Component4 from "newComponents/Component4";
 
 const ProjectPage = ({projects}) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const getProject = (id) => {
     for(let i = 0; i < projects.length; i++) {
@@ -26,10 +29,10 @@ const ProjectPage = ({projects}) => {
         <div className="flex flex-col md:gap-10 gap-[60px] items-start justify-start w-full">
           <div className="flex flex-col gap-10 items-start justify-start w-full">
             <LandingPageHeader className="bg-white-A700 flex gap-2 h-20 md:h-auto items-center justify-between md:px-5 px-[120px] py-[19px] w-full" />
-            <Component14 item={project}/>
             <Component15 project={project} />
+            <Component14 item={project}/>
           </div>
-          <Component4 projects={projects}/>
+          {/* <Component4 projects={projects}/> */}
         </div>
         <LandingPageFooter className="bg-white-A700 flex gap-2 items-center justify-center md:px-5 px-[120px] py-20 w-full" />
       </div>

@@ -4,6 +4,7 @@ export const projectsList = [
     name: "Smart SMS",
     punchline: "Stay connected even when disconnected!",
     url: "https://smartsms.netlify.app/",
+    github: "https://github.com/BenAyedMehdi/SmartSmsAPI",
     type: "Website",
     tech: "Figma-React",
     description:
@@ -17,14 +18,6 @@ export const projectsList = [
       date: "Nov 2023",
       other: "No Info",
     },
-    customer: {
-      name: "Take Off",
-      rating: "5",
-      reviews: "5 review",
-      email: "takeoff@gmail.com",
-      phone: "+65 0231 965 965",
-      img: "images/projects/takeoff.jpg",
-    },
     images: {
       img1: "images/projects/12.jpg",
       img2: "images/projects/11.jpg",
@@ -36,6 +29,7 @@ export const projectsList = [
     name: "Menja",
     punchline: "Building a better future for food with IoT!",
     url: "https://menjateam.netlify.app/",
+    github: "https://github.com/BenAyedMehdi/Menja",
     type: "Website",
     tech: "MUI-React",
     description:
@@ -49,14 +43,6 @@ export const projectsList = [
       date: "Oct 2022",
       other: "No Info",
     },
-    customer: {
-      name: "Menja team",
-      rating: "5",
-      reviews: "5 review",
-      email: "menja@gmail.com",
-      phone: "+65 0231 965 965",
-      img: "images/projects/menja0.jpg",
-    },
     images: {
       img1: "images/projects/menja1.jpg",
       img2: "images/projects/menja2.jpg",
@@ -68,6 +54,7 @@ export const projectsList = [
     name: "Silver Lining",
     punchline: "Managing your internation expenses made easy!",
     url: "https://silverlining-wise.netlify.app/",
+    github: "https://github.com/BenAyedMehdi/wise-silver-lining",
     type: "Website",
     tech: "MUI-React",
     description:
@@ -80,14 +67,6 @@ export const projectsList = [
       state: "Completed",
       date: "Oct 2022",
       other: "No Info",
-    },
-    customer: {
-      name: "Silver Lining",
-      rating: "5",
-      reviews: "5 review",
-      email: "silverlining@gmail.com",
-      phone: "+65 0231 965 965",
-      img: "images/projects/silverlining.jpg",
     },
     images: {
       img1: "images/projects/wise1.jpg",

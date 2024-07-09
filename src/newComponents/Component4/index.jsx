@@ -46,7 +46,7 @@ const Component4 = ({projects}) => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-start w-full">
-              <div className="md:gap-5 gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
+              <div className="md:gap-5 gap-6 grid sm:grid-cols-1 md:grid-cols-1 grid-cols-3 justify-center min-h-[auto] w-full">
                 {projects.map((project, index) => ( index<3 &&
                   <React.Fragment key={`LandingPageCard${index}`}>
                     <LandingPageCard

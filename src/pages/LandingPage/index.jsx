@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import LandingPageFooter from "components/LandingPageFooter";
 import LandingPageHeader from "components/LandingPageHeader";
@@ -8,6 +8,9 @@ import Component7 from "newComponents/Component7";
 import Component9_1 from "newComponents/Component9_1";
 
 const LandingPagePage = ({ projects }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
