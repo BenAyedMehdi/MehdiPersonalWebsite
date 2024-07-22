@@ -4,19 +4,15 @@ import { Img, Text } from "components";
 import { Link } from "react-router-dom";
 import { general } from "general";
 
-const LandingPageFooter = (props) => {
+const LandingPageFooter = () => {
   return (
     <>
-      <footer className={props.className}>
-        <div className="flex flex-col md:gap-10 gap-[120px] items-start justify-start w-full">
-          <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start w-full">
+      <footer className="bg-white-A700 flex gap-2 items-center justify-center md:px-5 px-[120px] py-8 w-full">
+        <div className="flex flex-col md:gap-10 gap-[30px] items-start justify-start w-full">
+          <div className="flex md:flex-col flex-row gap-4 md:gap-5 items-center justify-start w-full">
             <div className="flex flex-col gap-[43px] items-start justify-start w-[341px]">
               <div className="flex flex-row gap-[11px] h-10 md:h-auto items-center justify-start w-[341px]">
-                <Img
-                  className="h-10 w-10"
-                  src= {general.logo}
-                  alt="home_One"
-                />
+                <Img className="h-10 w-10" src={general.logo} alt="home_One" />
                 <Text
                   className="text-orange-A700 text-xl w-auto"
                   size="txtMarkoOneRegular20"
@@ -24,17 +20,7 @@ const LandingPageFooter = (props) => {
                   <Link to="/">{general.name}</Link>
                 </Text>
               </div>
-              <div className="flex flex-col gap-7 h-[194px] md:h-auto items-start justify-start w-full">
-                <Text
-                  className="leading-[160.00%] text-base text-gray-900"
-                  size="txtManropeSemiBold16"
-                >
-                  <>
-                    I help you create the solution
-                    <br />
-                    that you have in mind
-                  </>
-                </Text>
+              <div className="flex flex-col gap-7 h-auto md:h-auto items-start justify-start w-full">
                 <div className="flex flex-col gap-1 items-start justify-start w-auto">
                   <Text
                     className="text-base text-gray-900 w-auto"
@@ -78,8 +64,8 @@ const LandingPageFooter = (props) => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-1 md:flex-col flex-row md:gap-10 gap-[77px] items-start justify-start w-full">
-              <div className="flex flex-1 flex-col gap-5 items-start justify-start w-full">
+            <div className="flex text-center flex-1 md:flex-col flex-row md:gap-10 gap-[77px] items-start justify-start w-full">
+              {/* <div className="flex flex-1 flex-col gap-5 items-start justify-start w-full">
                 <Text
                   className="text-gray-900 text-lg w-full"
                   size="txtManropeBold18Gray900"
@@ -106,15 +92,17 @@ const LandingPageFooter = (props) => {
                     Desktop apps
                   </Text>
                 </div>
-              </div>
-              <div className="flex flex-1 flex-col gap-5 items-start justify-start w-full">
-                <Text
-                  className="text-gray-900 text-lg w-full"
-                  size="txtManropeBold18Gray900"
-                >
-                  <Link to="/portfolio">Portfolio</Link>
-                </Text>
-                <div className="flex flex-col gap-3.5 items-start justify-start w-full">
+              </div> */}
+              <div className=" text-center flex flex-1 flex-col gap-5 items-start justify-start w-full">
+                <Link to="/portfolio">
+                  <Text
+                    className="text-lg cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"
+                    size="txtManropeBold18Gray900"
+                  >
+                    Portfolio
+                  </Text>
+                </Link>
+                {/* <div className="flex flex-col gap-3.5 items-start justify-start w-full">
                   <Text
                     className="text-base text-gray-900 w-full"
                     size="txtManropeSemiBold16"
@@ -133,16 +121,18 @@ const LandingPageFooter = (props) => {
                   >
                     My skills
                   </Text>
-                </div>
+                </div> */}
               </div>
               <div className="flex flex-1 flex-col gap-5 items-start justify-start w-full">
-                <Text
-                  className="text-gray-900 text-lg w-full"
-                  size="txtManropeBold18Gray900"
-                >
-                  <Link to="/about">About</Link>
-                </Text>
-                <div className="flex flex-col gap-3.5 items-start justify-start w-full">
+              <Link to="/about">
+                  <Text
+                    className="text-lg cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"
+                    size="txtManropeBold18Gray900"
+                  >
+                    About
+                  </Text>
+                </Link>
+                {/* <div className="flex flex-col gap-3.5 items-start justify-start w-full">
                   <Text
                     className="text-base text-gray-900 w-full"
                     size="txtManropeSemiBold16"
@@ -161,16 +151,18 @@ const LandingPageFooter = (props) => {
                   >
                     A day in my life
                   </Text>
-                </div>
+                </div> */}
               </div>
               <div className="flex flex-1 flex-col gap-5 items-start justify-start w-full">
-                <Text
-                  className="text-gray-900 text-lg w-full"
-                  size="txtManropeBold18Gray900"
-                >
-                  Conatct
-                </Text>
-                <div className="flex flex-col gap-3.5 items-start justify-start w-full">
+              <Link to="/contactpage">
+                  <Text
+                    className="text-lg cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"
+                    size="txtManropeBold18Gray900"
+                  >
+                    Conatct
+                  </Text>
+                </Link>
+                {/* <div className="flex flex-col gap-3.5 items-start justify-start w-full">
                   <Text
                     className="text-base text-gray-900 w-full"
                     size="txtManropeSemiBold16"
@@ -189,12 +181,12 @@ const LandingPageFooter = (props) => {
                   >
                     Ask me anything
                   </Text>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
           <Text
-            className="text-base text-gray-900 w-full"
+            className="text-base text-center text-gray-900 w-full"
             size="txtManropeSemiBold16"
           >
             © 2024. All rights reserved.

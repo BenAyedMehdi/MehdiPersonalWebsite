@@ -55,7 +55,7 @@ const Component8 = () => {
             <div className="flex md:flex-col flex-row gap-6 items-start justify-start w-full">
               <Img
                 className="md:h-[400px] sm:h-auto h-full max-h-[400px] object-cover rounded-[10px] sm:w-[] md:w-[]"
-                src={general.images.img5}
+                src={general.images.img7}
                 alt="rectangle5595"
               />
               <Img

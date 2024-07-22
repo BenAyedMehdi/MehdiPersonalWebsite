@@ -34,14 +34,14 @@ const LandingPageHeader = (props) => {
                 Home
               </Text>
             </Link>
-            <Link to="/about">
+            {/* <Link to="/about">
               <Text
                 className="text-base cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"
                 size="txtManropeSemiBold16"
               >
                 About
               </Text>
-            </Link>
+            </Link> */}
             <Link to="/portfolio">
               <Text
                 className="text-base cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"

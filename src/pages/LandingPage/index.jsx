@@ -6,6 +6,7 @@ import Component2 from "newComponents/Component2";
 import Component4 from "newComponents/Component4";
 import Component7 from "newComponents/Component7";
 import Component9_1 from "newComponents/Component9_1";
+import Component10 from "newComponents/Component10";
 
 const LandingPagePage = ({ projects }) => {
   useEffect(() => {
@@ -25,12 +26,13 @@ const LandingPagePage = ({ projects }) => {
             </div>
           </div>
         </div>
-        <Component2 />
+        <Component10 />
         <div className="bg-green-100 flex flex-col font-manrope items-center justify-center p-[40px] md:px-10 sm:px-5 w-full">
           <Component4 projects={projects} />
         </div>
         <Component7 />
-        <LandingPageFooter className="bg-white-A700 flex gap-2 items-center justify-center md:px-5 px-[120px] py-20 w-full" />
+        <Component2 />
+        <LandingPageFooter className="bg-white-A700 flex gap-2 items-center justify-center md:px-5 px-[120px] py-8 w-full" />
       </div>
     </>
   );
