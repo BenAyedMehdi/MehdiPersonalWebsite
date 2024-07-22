@@ -14,4 +14,5 @@
 ## EcoRebuild v1.1
 - 8/06/2024
 
-### Removing some section to keep only a simple landing page
+### Removing some section to keep only a simple landing page (switched to branch)
+
