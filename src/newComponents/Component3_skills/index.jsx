@@ -19,7 +19,7 @@ const Component3_skills = () => {
             </div>
           </div>
           <div className="flex flex-col items-start justify-start w-full min-w-[auto]">
-            <div className="flex flex-row gap-10 sm:gap-10 sm:flex-col w-full items-center justify-start">
+            <div className="flex flex-row gap-10 md:gap-5 sm:flex-col w-full items-center justify-start">
               <Component3_skills_category
                 name={"Frontend"}
                 icon={"images/img_checkmark.svg"}
