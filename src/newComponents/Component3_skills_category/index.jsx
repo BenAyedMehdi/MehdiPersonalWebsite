@@ -2,7 +2,27 @@ import React from "react";
 
 import { Button, Img, Text } from "components";
 
-const Component3_skills_category = ({ name, icon }) => {
+const Component3_skills_category = ({ name, icon, skills}) => {
+
+  function SkillsComponent({ skills }) {
+    return (
+      <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 w-full">
+        
+        {skills.map((skill) => (
+          <div className="skill-item" key={skill.name}>
+            <img
+              src={skill.src}
+              alt={skill.alt}
+              className="mx-auto"
+              style={{ width: "50px", height: "50px" }}
+            />
+            <h3 className="text-center font-semibold">{skill.name}</h3>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="bg-white-A700 rounded-xl p-6 flex flex-col md:gap-5 gap-6 items-center justify-start w-1/3 sm:w-full">
@@ -23,45 +43,10 @@ const Component3_skills_category = ({ name, icon }) => {
             </Text>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 w-full">
-          <div className="skill-item">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-              alt="JavaScript"
-              className="mx-auto"
-              style={{ width: "50px", height: "50px" }}
-            />
-            <h3 className="text-center font-semibold">JavaScript</h3>
-          </div>
-          <div className="skill-item">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png"
-              alt="React"
-              className="mx-auto"
-              style={{ width: "50px", height: "50px" }}
-            />
-            <h3 className="text-center font-semibold">React</h3>
-          </div>
-          <div className="skill-item">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
-              alt="Node.js"
-              className="mx-auto"
-              style={{ width: "50px", height: "50px" }}
-            />
-            <h3 className="text-center font-semibold">Node.js</h3>
-          </div>
-          <div className="skill-item">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
-              alt="Python"
-              className="mx-auto"
-              style={{ width: "50px", height: "50px" }}
-            />
-            <h3 className="text-center font-semibold">Python</h3>
-          </div>
+          <SkillsComponent
+            skills={skills ? skills : []}
+          />
         </div>
-      </div>
     </>
   );
 };
