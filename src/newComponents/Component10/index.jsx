@@ -9,8 +9,8 @@ const Component10 = () => {
       <div className="flex flex-col font-manrope items-center justify-center max-w-[1440px] pl-[170px] pr-[120px] md:px-10 sm:px-5 w-full">
         <div className="flex md:flex-col flex-row md:gap-10 gap-[158px] items-center justify-between max-w-[1150px] mx-auto w-full">
           <Img
-            className="flex-1 md:flex-none h-[589px] sm:h-auto max-h-[589px] object-cover rounded-[10px] sm:w-[] md:w-[]"
-            src={general.images.img7}
+            className="flex-1 md:flex-none h-[489px] sm:h-auto max-h-[589px] object-cover rounded-[10px] sm:w-[] md:w-[]"
+            src={general.images.img5}
             alt="rectangleTwenty_One"
           />
           <div className="flex flex-1 flex-col gap-14 items-start justify-start w-full">

@@ -26,10 +26,10 @@ const Component4 = ({projects}) => {
                   className="text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[-0.72px] w-auto"
                   size="txtManropeExtraBold36"
                 >
-                  Featured Projects
+                  My Projects
                 </Text>
                 <Button
-                  className="common-pointer bg-transparent cursor-pointer flex items-center p-2 rounded-md justify-center min-w-[124px] hover:bg-gray-300 transition-colors duration-300"
+                  className="bg-green-200 common-pointer bg-transparent cursor-pointer flex items-center p-2 rounded-md justify-center min-w-[124px] hover:bg-gray-300 transition-colors duration-300"
                   onClick={() => navigate("/portfolio")}
                   rightIcon={
                     <Img
@@ -40,7 +40,7 @@ const Component4 = ({projects}) => {
                   }
                 >
                   <div className="font-bold text-left text-lg text-orange-A700">
-                    Explore All
+                    Explore All Projects
                   </div>
                 </Button>
               </div>
