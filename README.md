@@ -14,5 +14,9 @@
 ## EcoRebuild v1.1
 - 8/06/2024
 
-### Removing some section to keep only a simple landing page (switched to branch)
+### v1.1.0 Updates
+- Palestine banner
+- Add skills section
+- More consitent landing page
+- Improve responsiveness
 
