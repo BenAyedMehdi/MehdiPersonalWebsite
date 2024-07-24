@@ -20,8 +20,6 @@ export const projectsList = [
     },
     images: {
       img1: "images/projects/ecorebuild1.png",
-      img2: "images/projects/ecorebuild2.png",
-      img3: "images/projects/ecorebuild3.png",
     },
   },
   {

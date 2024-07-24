@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { projectsList } from "mock/projects";
 
 const Component15 = ({ project }) => {
+  const navigate = useNavigate();
   const projectDetails = project ?? projectsList[0];
   const openRedirectURL1 = () => {
     window.open(project.url, "_blank"); // replace with your YouTube video URL
@@ -19,6 +20,21 @@ const Component15 = ({ project }) => {
       <div className="flex flex-col font-manrope items-center justify-center md:px-10 sm:px-5 px-[120px] w-full">
         <div className="flex md:flex-col flex-row gap-6 items-start justify-center max-w-[1200px] mx-auto w-full">
           <div className="flex flex-1 flex-col gap-6 items-start justify-start w-full">
+            <Button
+              className="bg-orange-100 common-pointer bg-transparent cursor-pointer flex items-center p-2 rounded-md justify-center min-w-[124px] hover:bg-gray-300 transition-colors duration-300"
+              onClick={() => navigate("/portfolio")}
+              leftIcon={
+                <Img
+                  className="h-6 mb-[3px] mr-2"
+                  src="images/img_arrowright.svg"
+                  alt="arrow_right"
+                />
+              }
+            >
+              <div className="font-bold text-left text-lg text-orange-A700">
+                Back To  All Projects
+              </div>
+            </Button>
             <div className="bg-white-A700 border border-bluegray-100 border-solid flex flex-col items-start justify-start p-10 sm:px-5 rounded-[10px] w-full">
               <div className="flex flex-col gap-11 items-start justify-start w-full">
                 <div className="flex flex-col gap-6 items-start justify-start w-full">
@@ -202,7 +218,7 @@ const Component15 = ({ project }) => {
                 </List>
               </div>
             </div> */}
-{/*             
+            {/*             
             <div className="bg-white-A700 border border-bluegray-100 border-solid flex flex-col items-start justify-start p-10 sm:px-5 rounded-[10px] w-full">
               <div className="flex flex-col gap-[26px] items-start justify-start w-full">
                 <Text
@@ -289,7 +305,6 @@ const Component15 = ({ project }) => {
                 </div>
               </div>
             </div>  */}
-           
           </div>
           {/* <div className="bg-white-A700 border border-bluegray-100 border-solid flex sm:flex-1 flex-col items-start justify-start p-6 sm:px-5 rounded-[10px] w-auto sm:w-full">
             <div className="flex flex-col gap-10 items-start justify-start w-[336px]">

@@ -36,12 +36,12 @@ const Component9_1 = () => {
             </div>
 
             <Button className="bg-white-A700 border border-gray-600 border-solid text-xl cursor-pointer font-semibold py-[17px] rounded-[10px]  text-gray-900 w-full hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300">
-              <Link to="/about">
+              <Link to="/portfolio">
                 <Text
                   className="text-xl md:text-[22px] text-center sm:text-xl tracking-[-0.48px] w-full"
                   size="txtManropeBold24Gray900"
                 >
-                  More about me
+                  View my projects
                 </Text>
               </Link>
             </Button>
