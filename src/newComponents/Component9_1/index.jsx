@@ -21,9 +21,15 @@ const Component9_1 = () => {
                 className="leading-[180.00%] max-w-[531px] md:max-w-full text-gray-700 text-lg"
                 size="txtManropeRegular18Gray700"
               >
-                Making <strong>websites</strong> is what I love doing! 
-                <br/>
-                I am a <strong>full-stack</strong> developer, specialized in <strong>backend </strong>development, wired to
+                Creating websites is what I love doing!
+                <br />I am a proactive software engineer with over 3 years of
+                experience in the development of full-stack solutions. Skilled
+                in backend development with a strong grasp of frontend
+                technologies. Throughout my past experiences, I have
+                demonstrated my ability to manage complex projects from
+                conception to implementation, enhancing system performance and
+                user experience. 
+                {/* I am a <strong>full-stack</strong> developer, specialized in <strong>backend </strong>development, wired to
                 create solutions and implement <strong>creative</strong> ideas,{" "}
                 designed to unlock the potential of a <strong>team</strong> , a
                 company, or a project. With my <strong>technical</strong>{" "}
@@ -31,7 +37,7 @@ const Component9_1 = () => {
                 passion for <strong>innovation,</strong> I am aiming to build{" "}
                 <strong>scalable</strong> and maintainable solutions to deliver
                 the best <strong>performance</strong> and{" "}
-                <strong>value.</strong>
+                <strong>value.</strong> */}
               </Text>
             </div>
 
@@ -47,11 +53,18 @@ const Component9_1 = () => {
             </Button>
 
             <div className="flex md:flex-row sm:flex-col gap-4 items-start justify-start w-full">
-              <div className="flex flex-row gap-4 items-start justify-between w-full" >
-                <a target="_blank" href={general.facebook}>
+              <div className="flex flex-row gap-4 items-start justify-between w-full">
+                {/* <a target="_blank" href={general.facebook}>
                   <Img
                     className="h-[60px] min-w-[60px] rounded-[20px] hover:bg-white-A700 "
                     src="images/img_clock_gray_600.svg"
+                    alt="clock"
+                  />
+                </a> */}
+                <a target="_blank" href={general.github}>
+                  <Img
+                    className="h-[60px] min-w-[60px] rounded-[20px] hover:bg-white-A700 "
+                    src="images/github-icon.png"
                     alt="clock"
                   />
                 </a>

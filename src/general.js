@@ -6,8 +6,9 @@ export const general = {
     facebook: "https://www.facebook.com/happy.mahdi/",
     linkedin: "https://www.linkedin.com/in/ben-ayed-mehdi/",
     youtube: "https://www.youtube.com/channel/UCcJRMal-mHtTVnuU33jv9-Q",
+    github: "https://github.com/BenAyedMehdi",
     email: "mr.mehdi.ben.ayed@gmail.com",
-    phone: "(+36) 70 668 1520",
+    phone: "(+36) 20 483 4845",
     website: "mehdibenayed.netlify.app",
     punchline: "I help you create the solution that you have in mind",
 

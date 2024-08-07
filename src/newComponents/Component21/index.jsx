@@ -9,11 +9,12 @@ const Component21 = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const SERVICE_ID= "service_i8vm329";
-    const TEMPLATE_ID= "template_ufp5dmt";
-    const PUBLIC_KEY= "IOkGoHGi_AhtcUzet";
-    console.log(form.current)
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+    const SERVICE_ID = "service_i8vm329";
+    const TEMPLATE_ID = "template_ufp5dmt";
+    const PUBLIC_KEY = "IOkGoHGi_AhtcUzet";
+    console.log(form.current);
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
         publicKey: PUBLIC_KEY,
       })
       .then(
@@ -56,11 +57,11 @@ const Component21 = () => {
                 Your innovative ideas deserve the best solutions, and I am
                 excited to hear about them!
               </Text>
-              <Img
+              {/* <Img
                 className="h-[182px] md:h-auto object-cover rounded-[10px] w-[182px]"
                 src="images/generated/foosheekalogo.png"
                 alt="rectangle5616"
-              />
+              /> */}
             </div>
           </div>
 
@@ -122,10 +123,17 @@ const Component21 = () => {
                   Social
                 </Text>
                 <div className="flex flex-row gap-4 items-start justify-start w-full">
-                  <a target="_blank" href={general.facebook}>
+                  {/* <a target="_blank" href={general.facebook}>
                     <Img
                       className="h-[80px] w-[80px]"
                       src="images/img_clock_gray_600.svg"
+                      alt="clock"
+                    />
+                  </a> */}
+                  <a target="_blank" href={general.github}>
+                    <Img
+                      className="h-[80px] min-w-[80px] rounded-[20px] hover:bg-white-A700 "
+                      src="images/github-icon.png"
                       alt="clock"
                     />
                   </a>

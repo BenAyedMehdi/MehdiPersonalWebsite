@@ -12,7 +12,7 @@ const LandingPageFooter = () => {
           <div className="flex md:flex-col flex-row gap-4 md:gap-5 items-center justify-start w-full">
             <div className="flex flex-col gap-[43px] items-start justify-start w-[341px]">
               <div className="flex flex-row gap-[11px] h-10 md:h-auto items-center justify-start w-[341px]">
-                <Img className="h-10 w-10" src={general.logo} alt="home_One" />
+                {/* <Img className="h-10 w-10" src={general.logo} alt="home_One" /> */}
                 <Text
                   className="text-orange-A700 text-xl w-auto"
                   size="txtMarkoOneRegular20"
@@ -36,7 +36,7 @@ const LandingPageFooter = () => {
                   </Text>
                 </div>
                 <div className="flex flex-row gap-3 items-start justify-start w-full">
-                  <a target="_blank" href={general.facebook}>
+                  {/* <a target="_blank" href={general.facebook}>
                     <div className="flex flex-col h-[30px] items-center justify-start w-[30px]">
                       <Img
                         className="h-[30px] w-[30px]"
@@ -44,6 +44,13 @@ const LandingPageFooter = () => {
                         alt="plus"
                       />
                     </div>
+                  </a> */}
+                  <a target="_blank" href={general.github}>
+                    <Img
+                      className="h-[30px] w-[30px]"
+                      src="images/github-icon-orange.png"
+                      alt="github"
+                    />
                   </a>
                   <a target="_blank" href={general.linkedin}>
                     <Img
@@ -94,6 +101,16 @@ const LandingPageFooter = () => {
                 </div>
               </div> */}
               <div className=" text-center flex flex-1 flex-col gap-5 items-start justify-start w-full">
+                <Link to="/">
+                  <Text
+                    className="text-lg cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"
+                    size="txtManropeBold18Gray900"
+                  >
+                    Home
+                  </Text>
+                </Link>
+              </div>
+              <div className=" text-center flex flex-1 flex-col gap-5 items-start justify-start w-full">
                 <Link to="/portfolio">
                   <Text
                     className="text-lg cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"
@@ -123,8 +140,9 @@ const LandingPageFooter = () => {
                   </Text>
                 </div> */}
               </div>
-              <div className="flex flex-1 flex-col gap-5 items-start justify-start w-full">
-              <Link to="/about">
+
+              {/* <div className="flex flex-1 flex-col gap-5 items-start justify-start w-full">
+                <Link to="/about">
                   <Text
                     className="text-lg cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"
                     size="txtManropeBold18Gray900"
@@ -132,7 +150,7 @@ const LandingPageFooter = () => {
                     About
                   </Text>
                 </Link>
-                {/* <div className="flex flex-col gap-3.5 items-start justify-start w-full">
+                <div className="flex flex-col gap-3.5 items-start justify-start w-full">
                   <Text
                     className="text-base text-gray-900 w-full"
                     size="txtManropeSemiBold16"
@@ -151,10 +169,10 @@ const LandingPageFooter = () => {
                   >
                     A day in my life
                   </Text>
-                </div> */}
-              </div>
+                </div>
+              </div> */}
               <div className="flex flex-1 flex-col gap-5 items-start justify-start w-full">
-              <Link to="/contactpage">
+                <Link to="/contactpage">
                   <Text
                     className="text-lg cursor-pointer p-[13px] text-gray-900 rounded-[10px] hover:bg-gray-700 hover:text-white-A700 transition-colors duration-300"
                     size="txtManropeBold18Gray900"

@@ -12,7 +12,7 @@ const LandingPageHeader = (props) => {
         <div className="flex lg:flex-col flex-row items-center justify-between md:justify-center w-full">
           <div className="header-row my-px">
             <div className="flex flex-row gap-[11px] items-center justify-start p-2.5 rounded-[10px] hover:bg-gray-100 transition-colors duration-300">
-              <Img className="h-10 w-10" src={general.logo} alt="home" />
+              {/* <Img className="h-10 w-10" src={general.logo} alt="home" /> */}
               <Text
                 className="text-orange-A700 text-2xl w-auto"
                 size="txtMarkoOneRegular20"

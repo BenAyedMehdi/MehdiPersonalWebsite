@@ -92,8 +92,8 @@ const Component19 = () => {
                     size="txtManropeRegular18Gray600"
                   >
                     <>
-                      I am an engine designed to activate the full potential of a
-                      team, a company, or a project. Specialized in websites
+                      I am an engine designed to activate the full potential of
+                      a team, a company, or a project. Specialized in websites
                       development, wired to create solutions and implement
                       creative ideas. Our passion for innovation is what drives
                       us to build scalable and maintainable solutions to deliver
@@ -168,6 +168,13 @@ const Component19 = () => {
                         <Img
                           className="h-[60px] w-[60px]"
                           src="images/img_clock_gray_600.svg"
+                          alt="clock"
+                        />
+                      </a>
+                      <a target="_blank" href={general.github}>
+                        <Img
+                          className="h-[60px] min-w-[60px] rounded-[20px] hover:bg-white-A700 "
+                          src="images/github-icon.png"
                           alt="clock"
                         />
                       </a>
