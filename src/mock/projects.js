@@ -1,6 +1,72 @@
 export const projectsList = [
   {
-    id: 1,
+    id: 9,
+    name: "Horizons AI",
+    punchline: "Finf your path!!",
+    url: "https://horizons-interactive-paths.lovable.app/",
+    github: "",
+    type: "Website",
+    tech: "Figma-React",
+    description: "A free tool to help you Find the right path for you ✨",
+    about: "A free tool to help you Find the right path for you ✨",
+    highlights: {
+      category: "MVP",
+      duration: "3 days",
+      state: "Completed",
+      date: "Nov 2023",
+      other: "No Info",
+    },
+    images: {
+      img1: "images/projects/horizons.png",
+    },
+  },
+  {
+    id: 8,
+    name: "LinkUp Agency",
+    punchline: "Medical Recruitment Agency",
+    url: "https://develop.dex85pst1jipl.amplifyapp.com/",
+    github: "",
+    type: "Website",
+    tech: "Figma-React",
+    description: "A recruitment agency for medical professionals in Germany.",
+    about:
+      "The website is a platform for medical professionals to find jobs in Germany. The platform is secure and easy to use, creating a smooth experience for both the agency and the medical professionals.",
+    highlights: {
+      category: "MVP",
+      duration: "3 days",
+      state: "Completed",
+      date: "Nov 2023",
+      other: "No Info",
+    },
+    images: {
+      img1: "images/projects/linkup.png",
+    },
+  },
+  {
+    id: 7,
+    name: "Amana Tracker",
+    punchline: "Be trustworth!!",
+    url: "https://amana-trackify.lovable.app//",
+    github: "",
+    type: "Website",
+    tech: "Figma-React",
+    description:
+      "A free tool to help you track items you lend or borrow, reminding everyone of their Amana ✨",
+    about:
+      "A free tool to help you track items you lend or borrow, reminding everyone of their Amana ✨.",
+    highlights: {
+      category: "MVP",
+      duration: "3 days",
+      state: "Completed",
+      date: "Nov 2023",
+      other: "No Info",
+    },
+    images: {
+      img1: "images/projects/amana.png",
+    },
+  },
+  {
+    id: 6,
     name: "EcoRebuild",
     punchline: "Rebuilding Gaza sustainably through innovation!",
     url: "https://ecorebuild.netlify.app/",
@@ -23,7 +89,7 @@ export const projectsList = [
     },
   },
   {
-    id: 2,
+    id: 5,
     name: "Loup Garou",
     punchline: "A replacement for the narrator in the Warewolfs game!",
     url: "https://loupgarou.netlify.app/",
@@ -48,7 +114,7 @@ export const projectsList = [
     },
   },
   {
-    id: 3,
+    id: 4,
     name: "Foosheeka",
     punchline: "Bring Your Startup Ideas to Life!",
     url: "https://foosheeka.netlify.app/",
@@ -73,7 +139,7 @@ export const projectsList = [
     },
   },
   {
-    id: 4,
+    id: 3,
     name: "Smart SMS",
     punchline: "Stay connected even when disconnected!",
     url: "https://smartsms.netlify.app/",
@@ -98,7 +164,7 @@ export const projectsList = [
     },
   },
   {
-    id: 5,
+    id: 2,
     name: "Menja",
     punchline: "Building a better future for food with IoT!",
     url: "https://menjateam.netlify.app/",
@@ -123,7 +189,7 @@ export const projectsList = [
     },
   },
   {
-    id: 6,
+    id: 1,
     name: "Silver Lining",
     punchline: "Managing your internation expenses made easy!",
     url: "https://silverlining-wise.netlify.app/",
